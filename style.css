@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+html {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/background.png");
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    top: auto;
+}
+
+.logo {
+    width: 20rem;
+    height: 20rem;
+    /* max-height: 40px; */
+    overflow: hidden;
+}
+
+@media screen and (max-height: 600px) {
+    .icons-bar {
+        bottom: 20%;
+    }
+}
+
+.logo:hover {
+    animation-name: spin;
+    animation-duration: 1240ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.icons-bar {
+	display: flex;
+    margin: 0;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%) 
+}
+
+li img {
+    width: 5rem;
+    height: 5rem;
+    scale: 100%;
+    color: white;
+    fill: currentColor;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: all 350ms ease-in-out;
+}
+
+li img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip span {
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+    /* width: 120px; */
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    width: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+.tooltip:hover span {
+    opacity: 100%;
+}
