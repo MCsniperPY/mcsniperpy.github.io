@@ -44,6 +44,12 @@ h1 {
     }
 }
 
+@media screen and (min-height: 1920px) {
+    html {
+        background-size: cover;
+    }
+}
+
 .logo:hover {
     animation-name: spin;
     animation-duration: 1240ms;
