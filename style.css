@@ -102,7 +102,6 @@ h1 {
 
 .logo { 
 	transition: transform 620ms ease-in-out;
-
 }
 
 .logo:hover {
