@@ -26,16 +26,60 @@ h1 {
 }
 
 .logo {
-    width: 20rem;
-    height: 20rem;
+    width: 33vh;
+    height: 33vh;
+	max-height: 80vw;
+	max-width: 80vw;
     /* max-height: 40px; */
     overflow: hidden;
 }
 
-@media screen and (max-height: 600px) {
-    .icons-bar {
-        bottom: 20%;
+
+@media screen and (max-height: 450px) {
+	.icons-bar {
+		bottom: 20vh;
+	}
+	.logo {
+		height: 70vh;
+		width: 70vh;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	.title {
+		visibility: hidden;
+	}
+	.logo {
+		height: 60vh;
+		width: 60vh;
+		max-height: 70vw;
+		max-width: 70vw;
+	}
+	.icons-bar {
+        bottom: 20vh;
     }
+}
+
+@media screen and (max-height: 650px) {
+    .icons-bar {
+        bottom: 20vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .title {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-height: 450px) {
+	.icons-bar {
+		bottom: 20vh;
+	}
+	.logo {
+		height: 70vh;
+		width: 70vh;
+	}
 }
 
 @media screen and (min-width: 1920px) {
@@ -44,26 +88,21 @@ h1 {
     }
 }
 
-@media screen and (min-height: 1920px) {
-    html {
-        background-size: cover;
-    }
+@media screen and (min-width: 1920px) {
+	.title {
+		font-size: 2vh
+	}
+}
+
+.logo { 
+	transition: 1240ms ease-in-out;
+
 }
 
 .logo:hover {
-    animation-name: spin;
-    animation-duration: 1240ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out; 
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+	transform:rotate(360deg);
+	animation-duration: 1240ms;
+     
 }
 
 .icons-bar {
@@ -71,14 +110,17 @@ h1 {
     margin: 0;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
+	margin-bottom: 0px;
     transform: translate(-50%, 100%) 
 }
 
 li img {
-    width: 5rem;
-    height: 5rem;
+    width: 10vh;
+    height: 10vh;
+	max-height: 20vw;
+	max-width: 20vw;
     scale: 100%;
     color: white;
     fill: currentColor;
@@ -97,23 +139,24 @@ li img:hover {
 }
   
 .tooltip span {
+	font-size: 1.7vh;
     opacity: 0;
     transition: all 250ms ease-in-out;
     /* width: 120px; */
     background-color: white;
     color: #000;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    border-radius: 1.1vh;
+    padding: 1vh 0;
   
     /* Position the tooltip */
     position: absolute;
-    width: 120px;
-    padding-right: 10px;
-    padding-left: 10px;
+	width: 7vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
     bottom: 120%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -4.5vh; /* Use half of the width (120/2 = 60), to center the tooltip */ /*You forgot to factor in the padding on the left and right so the margin was off by -10px, now using vh instead for scalablity*/
 }
 
 
