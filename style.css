@@ -95,13 +95,13 @@ h1 {
 }
 
 .logo { 
-	transition: 1240ms ease-in-out;
+	transition: /*1240ms*/ 620ms ease-in-out;
 
 }
 
 .logo:hover {
-	transform:rotate(360deg);
-	animation-duration: 1240ms;
+	transform:rotate(180deg);
+	animation-duration: 620ms;
      
 }
 
