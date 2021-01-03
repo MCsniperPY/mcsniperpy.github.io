@@ -4,7 +4,10 @@ html {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    background-image: url("./assets/background.png");
+    background: url("./svgs/BackgroundWave.svg"), linear-gradient(90deg, rgba(0,88,160,1) 13%, rgba(112,161,210,1) 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: 0px 80vh, center;
+	background-size: 100vw, 100%;
 }
 
 ul {
@@ -64,6 +67,9 @@ h1 {
     .icons-bar {
         bottom: 20vh;
     }
+	html {
+		background-position: 0px 90vh;
+	}
 }
 
 @media screen and (max-width: 300px) {
@@ -82,11 +88,11 @@ h1 {
 	}
 }
 
-@media screen and (min-width: 1920px) {
-    html {
-        background-size: cover;
-    }
-}
+@media screen and (max-height: 150px) {
+	.icons-bar {
+		bottom: 30vh;
+	}
+}	
 
 @media screen and (min-width: 1920px) {
 	.title {
