@@ -95,7 +95,7 @@ h1 {
 }
 
 .logo { 
-	/* transition: 1240ms 620ms ease-in-out; */
+	transition: 620ms ease-in-out;
 
 }
 
