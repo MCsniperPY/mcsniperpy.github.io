@@ -37,26 +37,15 @@ h1 {
     overflow: hidden;
 }
 
-
-@media screen and (max-height: 450px) {
-	.icons-bar {
-		bottom: 20vh;
-	}
-	.logo {
-		height: 70vh;
-		width: 70vh;
-	}
-}
-
 @media screen and (max-height: 500px) {
 	.title {
 		visibility: hidden;
 	}
 	.logo {
-		height: 60vh;
-		width: 60vh;
-		max-height: 70vw;
-		max-width: 70vw;
+		height: 70vh; /* I removed the stage at 450px as it's only use was making the logo 60vh to 70vh and made these 70vh instead*/
+		width: 70vh;
+		max-height: 80vw; /* You might want to change these to 70vw, I made them 80vh so they are in line with the defualts */
+		max-width: 80vw;
 	}
 	.icons-bar {
         bottom: 20vh;
@@ -76,16 +65,6 @@ h1 {
     .title {
         font-size: 5vw;
     }
-}
-
-@media screen and (max-height: 450px) {
-	.icons-bar {
-		bottom: 20vh;
-	}
-	.logo {
-		height: 70vh;
-		width: 70vh;
-	}
 }
 
 @media screen and (max-height: 150px) {
