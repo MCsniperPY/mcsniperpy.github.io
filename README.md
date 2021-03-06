@@ -1,1 +1,1 @@
-# MCsniperPY web
+# MCsniperPY website
