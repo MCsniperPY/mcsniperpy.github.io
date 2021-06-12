@@ -178,7 +178,8 @@ button {
   background: #fff;
 }
 
-#docs {
+#docs,
+#donate-homepage {
   /* background: linear-gradient(168deg, #ffffff calc(50% - 1px), #1ba1e2 50%); */
   border-top: 1px solid black;
   margin-left: 10%;
